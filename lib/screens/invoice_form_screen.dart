@@ -69,7 +69,7 @@ class _InvoiceFormScreenState extends State<InvoiceFormScreen> {
           : defaultInfo['Email']!,
       'Tel': prefs.getString('phone')?.trim().isNotEmpty == true
           ? prefs.getString('phone')!
-          : defaultInfo['Phone']!,
+          : defaultInfo['Tel']!,
 
     };
   }
