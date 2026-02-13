@@ -52,7 +52,6 @@ class PdfPreviewScreen extends StatelessWidget {
             "Date": invoiceDate != null ? invoiceDate!.toString().split(' ')[0] : "",
             "Invoice No": invoiceNo,
             "Delivery Date": invoiceDate != null ? invoiceDate!.toString().split(' ')[0] : "",
-            "Business Reg No": "X/25 109522",
             "PO Number": poNumber,
           }; 
 
@@ -63,7 +62,7 @@ class PdfPreviewScreen extends StatelessWidget {
             allowSharing: true,
             useActions: true,
             build: (format) {
-              return PdfGenerator.generateInvoicePdf(
+              return InvoicePdfGenerator.generateInvoicePdf(
                 customerName: clientName,
                 customerAddress: clientAddress,
                 items: items,
