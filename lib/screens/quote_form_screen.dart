@@ -70,7 +70,7 @@ class _QuotationFormScreenState extends State<QuotationFormScreen> {
           : defaultInfo['Email']!,
       'Tel': prefs.getString('phone')?.trim().isNotEmpty == true
           ? prefs.getString('phone')!
-          : defaultInfo['Phone']!,
+          : defaultInfo['Tel']!,
 
     };
   }
