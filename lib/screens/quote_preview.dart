@@ -52,9 +52,7 @@ class QuotePreview extends StatelessWidget {
           final invoiceDetails = {
             "Date": quotationDate != null ? quotationDate!.toString().split(' ')[0] : "",
             "Quotation No": quotationeNo,
-            "Business Reg No": "X/25 109522"
           };
-
 
           return PdfPreview(
             canChangePageFormat: false,
