@@ -67,7 +67,7 @@ class QuotePreview extends StatelessWidget {
                 items: items,
                 invoiceDetails: invoiceDetails,
                 quotationFor: quotationFor,
-                tagline: "ALWAYS DEDICATED AND DEVOTED",
+                tagline: "ALWAYS DEDICATED DEVOTED",
                 logoBytes: logoBytes,
                 businessInfo: businessInfo,
                 pageFormat: format,
